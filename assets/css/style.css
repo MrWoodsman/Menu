@@ -52,12 +52,16 @@ body {
     margin-right: 5px;
 }
 
+#main #news {
+    margin-top: 25px;
+}
+
 /* Cards Style */
 
 .card {
     border-radius: 15px;
     width: calc(100vw - 16px);
-    height: 150px;
+    min-height: 150px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 8px;
 }
@@ -160,10 +164,6 @@ body {
     background-color: lightgray;
 }
 
-#news {
-    margin-top: 25px;
-}
-
 /* SCROLL BADGES */
 /* width */
 ::-webkit-scrollbar {
@@ -190,10 +190,14 @@ body {
 /* ZMIAN WYGLĄDU ZALEZNIE OD ROZDZIELCZOSCI */
 @media only screen and (min-width: 70em) {
 
+    body {
+        background-color: green;
+    }
+
     .card {
         border-radius: 15px;
         width: 500px;
-        height: 150px;
+        min-height: 150px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 8px;
     }
@@ -249,7 +253,61 @@ body {
         margin-right: 5px;
     }
     
+    #main #news {
+        /* margin-top: 15px; */
+        margin-left: 135px;
+    }
 
+}
+
+@media only screen and (max-width: 35em) {
+
+    body {
+        background-color: red;
+    }
+
+    .card .info {
+        /* width: 180px; */
+        width: 50vw;
+        height: 40px;
+        margin-left: 160px;
+        margin-bottom: 0px;
+        font-size: 1em;
+    }
+
+    .card .badges {
+        width: calc(100vw - 200px);
+    }
+
+    #main .badges {
+        width: 68.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 21.6em) {
+
+    body {
+        background-color: orange;
+    }
+
+    .card {
+        border-radius: 15px;
+        width: calc(100vw - 16px);
+        min-height: 235px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 8px;
+    }
+
+    .card .badges {
+        overflow-x: auto;
+        
+        margin-left: 10px;
+        display: inline-flex;
+        transform: translateY(68px);
+        padding-bottom: 2.5px;
+        width: calc(100vw - 28px);
+    }
 }
 
 @media only screen and (min-width: 1925px) {
