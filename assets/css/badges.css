@@ -1,9 +1,16 @@
 /* Card Badges */
-
 .card .badge {
     font-size: 0.7em;
     height: 13px;
     padding: 4px 7px 3px 7px;
+    margin-right: 5px;
+}
+
+/* Main Badges */
+#main .badge {
+    font-size: 1em;
+    height: 13px;
+    padding: 2px 7px 7px 7px;
     margin-right: 5px;
 }
 
