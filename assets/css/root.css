@@ -1,0 +1,16 @@
+:root {
+    --bottom-menu-color: white;
+    --bottom-menu-transition: 0.2s;
+    --badges-border-size: 1px;
+    --badge-html: orangered;
+    --badge-css: blue;
+    --badge-js: goldenrod;
+    --badge-c: green;
+    --badge-python: rgb(255, 238, 0);
+    --badge-go: rgb(0, 204, 255);
+    --badge-java: orange;
+    --badge-admin: red;
+    --badge-root: black;
+    --badge-moderator: green;
+    --badge-user: rgb(0, 47, 255);
+}

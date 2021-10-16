@@ -1,0 +1,65 @@
+/* Card Badges */
+
+.card .badge {
+    font-size: 0.7em;
+    height: 13px;
+    padding: 4px 7px 3px 7px;
+    margin-right: 5px;
+}
+
+/* All badges colors */
+
+.badge_css {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-css);
+}
+
+.badge_html {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-html);
+}
+
+.badge_js {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-js);
+}
+
+.badge_c {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-c);
+}
+
+.badge_python {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-python);
+}
+
+.badge_go {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-go);
+}
+
+.badge_java {
+    border-radius: 15px;
+    border: var(--badges-border-size) solid var(--badge-java);
+}
+
+.badge_admin {
+    border-radius: 15px;
+    border: 1px solid var(--badge-admin);
+}
+
+.badge_root {
+    border-radius: 15px;
+    border: 1px solid var(--badge-root);
+}
+
+.badge_moderator {
+    border-radius: 15px;
+    border: 1px solid var(--badge-moderator);
+}
+
+.badge_user {
+    border-radius: 15px;
+    border: 1px solid var(--badge-user);
+}
