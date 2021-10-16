@@ -285,29 +285,50 @@ body {
 
 }
 
-@media only screen and (max-width: 21.6em) {
+@media only screen and (max-width: 21.95em) {
 
     body {
         background-color: orange;
     }
 
+    .card .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card .name {
+        margin-left: 120px;
+        font-size: 8vw;
+    }
+
+    .card .info {
+        margin-left: 120px;
+        font-size: 0.8em;
+    }
+
     .card {
         border-radius: 15px;
         width: calc(100vw - 16px);
-        min-height: 235px;
+        min-height: 160px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 8px;
     }
 
     .card .badges {
         overflow-x: auto;
-        
         margin-left: 10px;
         display: inline-flex;
-        transform: translateY(68px);
+        transform: translateY(calc(8vw * 1.5));
         padding-bottom: 2.5px;
-        width: calc(100vw - 28px);
+        width: calc(100vw - 35px);
     }
+
+    
+    #main .badges {
+        width: 60vw;
+    }
+
+
 }
 
 @media only screen and (min-width: 1925px) {
