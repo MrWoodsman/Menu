@@ -14,3 +14,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'uni_sansthin_caps';
+    src: url('../fonts/uni-sans.thin-caps_1-webfont.woff2') format('woff2'),
+         url('../fonts/uni-sans.thin-caps_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: 'Anton', sans-serif; */

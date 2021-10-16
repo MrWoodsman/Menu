@@ -37,7 +37,7 @@ body {
 
 #main .badges {
     overflow-x: auto;
-    
+    font-family: uni_sansthin_caps;
     margin-left: 85px;
     display: inline-flex;
     transform: translateY(17.5px);
@@ -45,15 +45,61 @@ body {
     width: 62vw;
 }
 
-#main .badge {
-    font-size: 1em;
-    height: 13px;
-    padding: 4px 7px 7px 7px;
-    margin-right: 5px;
+#main #news {
+    margin-left: -40px;
+    margin-top: 25px;
+    width: calc(100vw - 16px);
+    font-family: 'Anton', sans-serif;
 }
 
-#main #news {
-    margin-top: 25px;
+#main #news li {
+    display: block;
+    padding: 5px 0px 5px 85px;
+    list-style: none;
+    /* background-color: red; */
+}
+
+#main #news li:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.075);
+  }
+
+#main #news li p {
+    padding: 0px;
+    margin: 0px;
+}
+
+#main #news li .notification {
+    display: block;
+    transform: translateX(-57px) translateY(-5px);
+    position: absolute;
+    text-align: center;
+    padding: 5px 2.5px 0px 2.5px;
+    margin: 0px;
+    width: 23px;
+    height: 23px;
+    color: white;
+    font-weight: bolder;
+}
+
+#main #news li .status-3 {
+    background-color: red;
+}
+#main #news li:nth-child(odd) .status-3 {
+    background-color: rgb(226, 0, 0);
+}
+
+#main #news li .status-1 {
+    background-color: rgb(0, 170, 0);
+}
+#main #news li:nth-child(odd) .status-1 {
+    background-color: rgb(0, 146, 0);
+}
+
+#main #news li .status-2 {
+    background-color: orange;
+}
+#main #news li:nth-child(odd) .status-2 {
+    background-color: rgb(231, 150, 0);
 }
 
 /* Cards Style */
@@ -86,6 +132,7 @@ body {
 
 .card .info {
     /* width: 180px; */
+    font-family: 'Anton', sans-serif;
     width: 63vw;
     height: 40px;
     margin-left: 160px;
@@ -95,7 +142,7 @@ body {
 
 .card .badges {
     overflow-x: auto;
-    
+    font-family: uni_sansthin_caps;
     margin-left: 160px;
     display: inline-flex;
     transform: translateY(20px);
@@ -191,7 +238,7 @@ body {
 @media only screen and (min-width: 70em) {
 
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 
     .card {
@@ -238,7 +285,6 @@ body {
 
     #main .badges {
         overflow-x: auto;
-        
         margin-left: 160px;
         display: inline-flex;
         transform: translateY(15px);
@@ -258,12 +304,29 @@ body {
         margin-left: 135px;
     }
 
+    #main #news {
+        margin-left: 120px;
+        margin-top: 25px;
+        width: calc(100vw - 684px);
+        font-family: 'Anton', sans-serif;
+    }
+    
+    #main #news li {
+        padding: 5px 0px 5px 15px;
+        list-style: none;
+        /* background-color: red; */
+    }
+    
+    #main #news li:nth-child(odd) {
+        background: rgba(0, 0, 0, 0.075);
+      }
+
 }
 
 @media only screen and (max-width: 35em) {
 
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 
     .card .info {
@@ -288,7 +351,7 @@ body {
 @media only screen and (max-width: 21.95em) {
 
     body {
-        background-color: orange;
+        /* background-color: orange; */
     }
 
     .card .img {
@@ -350,3 +413,13 @@ body {
     }
 
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
